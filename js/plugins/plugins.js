@@ -130,7 +130,7 @@ return t=a?function(t){return t&&a(r(t))}:function(t){return t&&r(t)}}function e
         // default options
         var defaultOpt = $.extend({
             theme: 'light',
-            breakpoint: 991,
+            breakpoint: 1024,
             openCloseSpeed: 350,
             megaopenCloseSpeed: 700,
             alwaysHidden: false,
