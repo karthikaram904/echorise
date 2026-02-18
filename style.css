@@ -382,7 +382,7 @@ img {
         font-size: 16px; }
         .header-area .oneMusic-main-menu .classy-navbar .classynav ul li a:hover, .header-area .oneMusic-main-menu .classy-navbar .classynav ul li a:focus {
           color: rgba(255, 255, 255, 0.7); }
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @media only screen and (min-width: 768px) and (max-width: 1025px) {
           .header-area .oneMusic-main-menu .classy-navbar .classynav ul li a {
             background-color: #000000;
             border-bottom-color: rgba(255, 255, 255, 0.1); } }
@@ -429,7 +429,7 @@ img {
       position: relative;
       z-index: 1;
       margin-left: 100px; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (min-width: 768px) and (max-width: 1025px) {
         .header-area .oneMusic-main-menu .login-register-cart-button {
           margin-left: 12px;
           margin-top: 15px; } }
@@ -496,7 +496,7 @@ img {
 .classy-navbar .nav-brand {
   max-width: 130px; }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
   .breakpoint-on .classy-navbar .classy-menu {
     background-color: #000000; } }
 @media only screen and (max-width: 767px) {
@@ -1759,10 +1759,14 @@ body.dark .theme-btn {
 }
 
 
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
 #rtl-toggle,#theme-toggle
 {
 display:none;
+}
+.choose_1_right_inner
+{
+  padding:0px !important;
 }
 }
 /* ===== EchoRise Hero Section ===== */
