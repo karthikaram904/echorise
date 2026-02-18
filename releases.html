@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Releases</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="musicdash-wrapper">
+
+<!-- SIDEBAR -->
+<div class="musicdash-sidebar" id="sidebar">
+    <div class="musicdash-logo">
+       <a href="index.html"> <img src="img/core-img/logo.png" alt="Logo"></a>
+    </div>
+
+    <ul class="musicdash-menu">
+
+    <li>
+        <a href="dashboard.html">
+            <i class="bi bi-speedometer2"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="artists.html">
+            <i class="bi bi-person"></i>
+            <span>Artists</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="active" href="releases.html">
+            <i class="bi bi-music-note-beamed"></i>
+            <span>Releases</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tours.html">
+            <i class="bi bi-calendar-event"></i>
+            <span>Tours</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="merchandise.html">
+            <i class="bi bi-bag"></i>
+            <span>Merchandise</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="analytics.html">
+            <i class="bi bi-bar-chart"></i>
+            <span>Analytics</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="bi bi-gear"></i>
+            <span>Log Out</span>
+        </a>
+    </li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="musicdash-main">
+
+    <!-- Topbar -->
+    <div class="musicdash-topbar">
+        <h2>Releases Management</h2>
+        <button class="musicdash-btn">+ Add New Release</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="musicdash-grid">
+
+        <div class="musicdash-card">
+            <h4>Total Releases</h4>
+            <h2>42</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Albums</h4>
+            <h2>12</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Singles</h4>
+            <h2>20</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Upcoming</h4>
+            <h2>5</h2>
+        </div>
+
+    </div>
+
+    <!-- Filter Section -->
+    <div class="musicdash-card">
+        <div class="musicdash-filter">
+            <input type="text" placeholder="Search release...">
+            <select>
+                <option>All Types</option>
+                <option>Album</option>
+                <option>EP</option>
+                <option>Single</option>
+            </select>
+            <select>
+                <option>All Artists</option>
+                <option>DJ Nova</option>
+                <option>Luna Beats</option>
+                <option>MC Blaze</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Releases Grid -->
+    <div class="musicdash-release-grid">
+
+        <div class="musicdash-release-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>Midnight Echo</h4>
+            <p>Artist: DJ Nova</p>
+            <p>Type: Album</p>
+            <div class="musicdash-stream-btns">
+                <span>Spotify</span>
+                <span>Apple</span>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+        <div class="musicdash-release-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>Neon Lights</h4>
+            <p>Artist: Luna Beats</p>
+            <p>Type: Single</p>
+            <div class="musicdash-stream-btns">
+                <span>Spotify</span>
+                <span>Apple</span>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+        <div class="musicdash-release-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>Street Rhythm</h4>
+            <p>Artist: MC Blaze</p>
+            <p>Type: EP</p>
+            <div class="musicdash-stream-btns">
+                <span>Spotify</span>
+                <span>Apple</span>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="musicdash-card">
+        <h4>Recent Release Activity</h4>
+        <p>🎵 Midnight Echo crossed 1M streams</p>
+        <p>📀 Neon Lights added to Top 50 playlist</p>
+        <p>🚀 Street Rhythm EP trending worldwide</p>
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- JS -->
+<script>
+document.getElementById("toggleBtn").addEventListener("click", function(){
+    document.getElementById("sidebar").classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
