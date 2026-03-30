@@ -1749,7 +1749,7 @@ body {
 
 /* Dark theme */
 body.dark {
-  background: #0b1220;
+  background: #000;
   color: #ffffff;
 }
 
