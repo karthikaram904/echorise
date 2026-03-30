@@ -4224,3 +4224,6 @@ body{
 .dark .choose_1_right_inner:hover {
   background: #000 !important;
 }
+.musicdash-card {
+ margin-top: 30px;
+}
