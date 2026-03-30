@@ -4211,3 +4211,12 @@ body{
 .eye-icon:hover {
   color: #000;
 }
+.forgot-password {
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+.forgot-password a {
+  color: #000;
+  text-decoration: none;
+}
