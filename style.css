@@ -4185,3 +4185,26 @@ body{
   background: #000;
   color: #fff;
 }
+.password-group {
+  position: relative;
+}
+
+.password-group input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right:12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.eye-icon {
+  color: #777;
+}
+
+.eye-icon:hover {
+  color: #000;
+}
