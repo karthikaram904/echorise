@@ -4221,3 +4221,6 @@ body{
   color: #000;
   text-decoration: none;
 }
+.dark .choose_1_right_inner:hover {
+  background: #000 !important;
+}
