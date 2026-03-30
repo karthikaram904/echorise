@@ -4185,6 +4185,9 @@ body{
   background: #000;
   color: #fff;
 }
+.apple:hover {
+  color: #fff !important;
+}
 .password-group {
   position: relative;
 }
