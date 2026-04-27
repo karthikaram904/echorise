@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merchandise</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="musicdash-wrapper">
+
+<!-- SIDEBAR -->
+<div class="musicdash-sidebar" id="sidebar">
+    <div class="musicdash-logo">
+       <a href="index.html"> <img src="img/core-img/logo.png" alt="Logo"></a>
+    </div>
+
+    <ul class="musicdash-menu">
+
+    <li>
+        <a href="dashboard.html">
+            <i class="bi bi-speedometer2"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="artists.html">
+            <i class="bi bi-person"></i>
+            <span>Artists</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="releases.html">
+            <i class="bi bi-music-note-beamed"></i>
+            <span>Releases</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tours.html">
+            <i class="bi bi-calendar-event"></i>
+            <span>Tours</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="active" href="merchandise.html">
+            <i class="bi bi-bag"></i>
+            <span>Merchandise</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="analytics.html">
+            <i class="bi bi-bar-chart"></i>
+            <span>Analytics</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="bi bi-gear"></i>
+            <span>Log Out</span>
+        </a>
+    </li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="musicdash-main">
+
+    <!-- Topbar -->
+    <div class="musicdash-topbar">
+        <h2>Merchandise Management</h2>
+        <button class="musicdash-btn">+ Add New Product</button>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="musicdash-grid">
+
+        <div class="musicdash-card">
+            <h4>Total Products</h4>
+            <h2>28</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>In Stock</h4>
+            <h2>22</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Out of Stock</h4>
+            <h2>6</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Monthly Sales</h4>
+            <h2>$18,400</h2>
+        </div>
+
+    </div>
+
+    <!-- Filter Section -->
+    <div class="musicdash-card">
+        <div class="musicdash-filter">
+            <input type="text" placeholder="Search product...">
+            <select>
+                <option>All Categories</option>
+                <option>Hoodies</option>
+                <option>T-Shirts</option>
+                <option>Vinyl</option>
+                <option>Accessories</option>
+            </select>
+            <select>
+                <option>Stock Status</option>
+                <option>In Stock</option>
+                <option>Out of Stock</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="musicdash-merch-grid">
+
+        <div class="musicdash-merch-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>EchoRise Hoodie</h4>
+            <p>Price: $65</p>
+            <span class="musicdash-stock in">In Stock</span>
+        </div>
+
+        <div class="musicdash-merch-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>Limited Vinyl Edition</h4>
+            <p>Price: $45</p>
+            <span class="musicdash-stock out">Out of Stock</span>
+        </div>
+
+        <div class="musicdash-merch-card">
+            <img src="https://via.placeholder.com/300x250" alt="">
+            <h4>Tour T-Shirt Collection</h4>
+            <p>Price: $30</p>
+            <span class="musicdash-stock in">In Stock</span>
+        </div>
+
+    </div>
+
+    <!-- Revenue Summary -->
+    <div class="musicdash-card">
+        <h4>Revenue Summary</h4>
+        <p>🛍 Hoodies: $8,200</p>
+        <p>💿 Vinyl Sales: $5,400</p>
+        <p>👕 T-Shirts: $4,800</p>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="musicdash-card">
+        <h4>Recent Merchandise Activity</h4>
+        <p>🛍 EchoRise Hoodie restocked</p>
+        <p>💿 Limited Vinyl sold out</p>
+        <p>👕 New tour T-shirt design added</p>
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- JS -->
+<script>
+document.getElementById("toggleBtn").addEventListener("click", function(){
+    document.getElementById("sidebar").classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

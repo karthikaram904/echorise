@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tours</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="musicdash-wrapper">
+
+<!-- SIDEBAR -->
+<div class="musicdash-sidebar" id="sidebar">
+    <div class="musicdash-logo">
+       <a href="index.html"> <img src="img/core-img/logo.png" alt="Logo"></a>
+    </div>
+
+    <ul class="musicdash-menu">
+
+    <li>
+        <a href="dashboard.html">
+            <i class="bi bi-speedometer2"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="artists.html">
+            <i class="bi bi-person"></i>
+            <span>Artists</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="releases.html">
+            <i class="bi bi-music-note-beamed"></i>
+            <span>Releases</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="active" href="tours.html">
+            <i class="bi bi-calendar-event"></i>
+            <span>Tours</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="merchandise.html">
+            <i class="bi bi-bag"></i>
+            <span>Merchandise</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="analytics.html">
+            <i class="bi bi-bar-chart"></i>
+            <span>Analytics</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="bi bi-gear"></i>
+            <span>Log Out</span>
+        </a>
+    </li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="musicdash-main">
+
+    <!-- Topbar -->
+    <div class="musicdash-topbar">
+        <h2>Tours Management</h2>
+        <button class="musicdash-btn">+ Add New Tour</button>
+    </div>
+
+    <!-- Tour Stats -->
+    <div class="musicdash-grid">
+
+        <div class="musicdash-card">
+            <h4>Total Tours</h4>
+            <h2>15</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Upcoming Events</h4>
+            <h2>6</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Tickets Sold</h4>
+            <h2>8,420</h2>
+        </div>
+
+        <div class="musicdash-card">
+            <h4>Tour Revenue</h4>
+            <h2>$128K</h2>
+        </div>
+
+    </div>
+
+    <!-- Filter Section -->
+    <div class="musicdash-card">
+        <div class="musicdash-filter">
+            <input type="text" placeholder="Search city or artist...">
+            <select>
+                <option>All Artists</option>
+                <option>DJ Nova</option>
+                <option>Luna Beats</option>
+                <option>MC Blaze</option>
+            </select>
+            <select>
+                <option>Status</option>
+                <option>Upcoming</option>
+                <option>Completed</option>
+                <option>Cancelled</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Tours Grid -->
+    <div class="musicdash-tour-grid">
+
+        <div class="musicdash-tour-card">
+            <h4>London Music Fest</h4>
+            <p><strong>Artist:</strong> DJ Nova</p>
+            <p><strong>Date:</strong> 12 Mar 2026</p>
+            <p><strong>Venue:</strong> O2 Arena</p>
+            <span class="musicdash-status upcoming">Upcoming</span>
+        </div>
+
+        <div class="musicdash-tour-card">
+            <h4>Dubai Night Beats</h4>
+            <p><strong>Artist:</strong> Luna Beats</p>
+            <p><strong>Date:</strong> 25 Mar 2026</p>
+            <p><strong>Venue:</strong> Coca-Cola Arena</p>
+            <span class="musicdash-status upcoming">Upcoming</span>
+        </div>
+
+        <div class="musicdash-tour-card">
+            <h4>New York Live</h4>
+            <p><strong>Artist:</strong> MC Blaze</p>
+            <p><strong>Date:</strong> 02 Apr 2026</p>
+            <p><strong>Venue:</strong> Madison Square Garden</p>
+            <span class="musicdash-status completed">Completed</span>
+        </div>
+
+    </div>
+
+    <!-- Revenue Breakdown -->
+    <div class="musicdash-card">
+        <h4>Revenue Breakdown</h4>
+        <p>🎟 VIP Tickets: $58,000</p>
+        <p>🎟 Regular Tickets: $70,000</p>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="musicdash-card">
+        <h4>Recent Tour Activity</h4>
+        <p>🎤 DJ Nova tour tickets 90% sold out</p>
+        <p>🌍 Luna Beats added new Dubai show</p>
+        <p>🏟 MC Blaze completed New York show</p>
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- JS -->
+<script>
+document.getElementById("toggleBtn").addEventListener("click", function(){
+    document.getElementById("sidebar").classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
